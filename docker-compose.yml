@@ -1,0 +1,10 @@
+services:
+
+  ai-service:
+    build: ./
+    image: ai-service-test-svk
+    ports:
+      - 8000:8000
+    command: python main.py
+    # volumes:
+    #   - ./:/usr/src/app
